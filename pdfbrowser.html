@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+        .layout {
+            width: 1366px;
+            height: 768px;
+            
+          
+            display: grid;
+            grid:
+              "left-sidebar middle-body" 1fr
+              / auto 1fr;
+            gap: 18px;
+            
+          }
+          
+          .left-sidebar { grid-area: left-sidebar; background-color:grey;padding-top: 22px;color:white;width:200px;padding-left:20px;}
+          .middle-body { grid-area: middle-body; }
+          </style>
+    </head>
+    <section class="layout">
+        <div class="left-sidebar">PDF Instructions</div>
+        <div class="middle-body">
+            <h1>Welcome to Creating a Website on GitHub Step-by-Step Instructions Page</h1>
+            <p>You should be able to view, downloand and/or print the PDF document in your browser.</p>
+            <embed src="https://keya-bird.github.io/CreatingWebsiteOnGitHub.pdf" width="1024px" height="768px" />
+        </div>
+      </section>
     <body>
- <embed src="https://keya-bird.github.io/CreatingWebsiteOnGitHub.pdf" width="600px" height="500px" />
+
     </body>
 </html>
