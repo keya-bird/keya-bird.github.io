@@ -3,7 +3,8 @@ keya-bird.github.io
 # Name: 
 Keya-bird.github.io is the name of my portfloio project. This portfolio is to showcase my work.  
 # Description: 
-As I progress through my courses I will add my projects. 
+As I progress through my courses I will add my projects here to my portfolio.
+I love :coffee:, my orange :cat: and history :books:
 # Installation: 
 No need to install its just static info.
 # Usage: 
