@@ -7,11 +7,11 @@ As I progress through my courses I will add my projects here to my portfolio.
 I love :coffee:, my orange :cat: and history :books:
 # Repos
 ## My Pacmen Repo
-<a href="https://github.com/keya-bird/pacmen/"/> <br />
+<a href="https://github.com/keya-bird/pacmen/">PacMen Exercise </a> <br />
 ## My Eyes Repo
-<a href="https://github.com/keya-bird/eyes"/><br />
+<a href="https://github.com/keya-bird/eyes">Eyes Exercise</a> <br />
 ## My Bus Tracker Repo
-<a href="https://github.com/keya-bird/bustracker"/><br />
+<a href="https://github.com/keya-bird/bustracker">Bus Tracker Exercises</a>
 # Installation
 No need to install its just static info.
 # Usage
