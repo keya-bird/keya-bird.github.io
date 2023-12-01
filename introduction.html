@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+</head>
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+
+<body>
+  <div w3-include-html="navbar.html"></div> 
+
+    <script>
+    includeHTML();
+    </script>
+<p>
+</p>
+
+   <!-- Custom styles for this template -->
+   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="blog.css" rel="stylesheet">
+ </head>
+ <body>
+ 
+<main class="container">
+ <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+   <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic">Introduction to My Portfolio</h1>
+     <p class="lead my-3">Welcome to my portfolio. My portfolio is using using custom components and layouts that are supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected and in some cases slightly modified to fit my look and feel.</p>
+     <p class="lead mb-0"><a href="#welcome" class="text-white fw-bold">Continue reading...</a></p>
+   </div>
+ </div>
+
+ <div class="row mb-2">
+   <div class="col-md-6.5">
+     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+       <div class="col p-4 d-flex flex-column position-static">
+         <strong class="d-inline-block mb-2 text-primary">Personal</strong>
+         <h3 class="mb-0">About Me</h3>
+         <div class="mb-1 text-muted">Nov 12</div>
+         <p class="card-text">Howdy, partners! Welcome to my corner of the digital frontier. While I'm a little shy in the face of the camera (slight Scopophobia, y'know), I'm thrilled to share a peek into my world. This here video aims to introduce you to who I am and what I'm all about. So, grab a seat by the campfire, saddle up, and let's get started!</p>
+         <a href="personal.html" class="stretched-link">Continue reading</a>
+  
+       </div>
+       <div class="col-auto d-none d-lg-block">
+        <iframe width="200" height="250" src="https://www.youtube.com/embed/HU22wXkgnkw?si=xI8wu8bnGdw2Xp3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
+     </div>
+   </div>
+   <div class="col-md-6.5">
+     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+       <div class="col p-4 d-flex flex-column position-static">
+         <strong class="d-inline-block mb-2 text-success">Professional</strong>
+         <h3 class="mb-0">About Me</h3>
+         <div class="mb-1 text-muted">Nov 11</div>
+         <p class="mb-auto">This section will link you to another portfolio of mine with additional social media contacts of mine and work I've completed or currently working on.</p>
+         <a href="https://keyatekkie7292.myportfolio.com/welcome" class="stretched-link">Continue reading</a>
+       </div>
+       <div class="col-auto d-none d-lg-block">
+         <img src="keya2.png" class="img-fluid float-end" style="width:200px" style="height: 250px">
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="row g-5">
+   <div class="col-md-8">
+     <h3 class="pb-4 mb-4 fst-italic border-bottom">
+      Breaking Barriers: A Native American Woman's Quest for Academic Excellence
+     </h3>
+     <div id="welcome">
+     <article class="blog-post">
+       <h2 class="blog-post-title">Introduction To My Portfolio</h2>
+       <p class="blog-post-meta">November 25th, 2023 by <a href="#">Keya Birdsbill</a></p>
+       <p>Welcome to my portfolio. My portfolio is using using custom components and layouts that are supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected and in some cases slightly modified to fit my look and feel.</p>
+       <hr>
+       <p>As part of an MIT homework assignment that constitutes 40% of my grade, I have developed a portfolio consisting of: a landing page, video introduction of myself, a navigation bar, a projects page that interlinks with my GitHub repositories, a contact me section and Bootstrap typography and layout.</p></div>
+       <h2>Learning </h2>
+       <p>Here's a quick snapshot of what I've learned while developing my portfolio:</p>
+       <blockquote class="blockquote">
+         <p>Utilizing modular HTML</p>
+       </blockquote>
+       <blockquote class="blockquote">
+        <p>Creating a fully functional reusable component</p>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p>Fetching the content of an external HTML file </p>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p>Attribute Removal and Recursion</p>
+      </blockquote>
+       <p>I am incredibly grateful for the invaluable learning experience I've gained through the MIT Course Coding for Women. This opportunity has been immensely rewarding, and I continue to learn and grow from it even now. One of my long-standing curiosities was understanding how to dynamically include content from an external HTML file into another. Developing this portfolio presented a technical challenge that allowed me to master this technique, along with many others.</p>
+       <h3>Project Site Structure</h3>
+       <p>Included in my portfolio project are these items:</p>
+       <ul>
+         <li>A landing page with Video Intro.</li>
+         <li>Project links included via the menu.</li>
+         <li>A navigation bar that is responsive.</li>
+         <li>Project is utilizing the latest Bootstrap for typograhy and layout.</li>
+         <li>Project is utilizing reusable components.</li>
+       </ul>
+       <p>Project References:</p>
+       <ol>
+         <li>Bootstrap</li>
+         <li>Mark-Otto Template Developer</li>
+         <li>Google</li>
+         <li>W3Schools</li>
+         <li>JavaScript MDN Web Docs</li>
+       </ol>
+       <p>Additional technologies learned via my course of studies:</p>
+       <dl>
+         <dt>HyperText Markup Language (HTML)</dt>
+         <dd>The language used to describe and define the content of a Web page</dd>
+         <dt>Cascading Style Sheets (CSS)</dt>
+         <dd>Used to describe the appearance of Web content</dd>
+         <dt>JavaScript (JS)</dt>
+         <dd>The JavaScript language used to build advanced Web sites and applications</dd>
+         <dt>API</dt>
+         <dd>The JavaScript language used to build advanced Web sites and applications via API's</dd>
+       </dl>
+       
+      </article>
+
+     <article class="blog-post">
+       <h2 class="blog-post-title">A personal note</h2>
+       <p class="blog-post-meta">December 23, 2020 by <a href="#">Keya Birdsbill</a></p>
+
+       <p>I lead a busy and fulfilling life, balancing the demands of family, work, and my passion for technology. My dedication to my family is unwavering, as I raise our four children and care for our beloved furry companions. This portfolio showcases my diverse talents and adaptability throughout my career. I have thrived in roles such as Network Operations Analyst and Web Analyst, and I am now embarking on an exciting journey to learn JavaScript. My expertise is constantly evolving and expanding.
+
+        Alongside my full-time job, I also actively manage two successful businesses - KeyaTech and Water People Tours. I believe that my husband and I share an incredible work ethic and entrepreneurial spirit, qualities we strive to instill in our children.
+        
+        Life is a lifelong learning process, and I believe it's essential to be a driven and passionate individual. We must constantly challenge ourselves to grow and embrace new opportunities. The Professional Certificate in Coding: For Women at MIT Emeritus has provided me with a wonderful opportunity to learn and expand my skills, an experience I am truly grateful for.</p>
+       
+     </div>
+
+   <div class="col-md-4">
+     <div class="position-sticky" style="top: 2rem;">
+       <div class="p-4 mb-3 bg-light rounded">
+         <h4 class="fst-italic">About</h4>
+         <p class="mb-0">As an Indigenous Native American woman and the proud wife and mother of four incredible children, 
+          I am deeply driven to overcome poverty and prejudice through the pursuit of higher education in technology. My passion for web technologies 
+          and technology as a whole fuels my determination to pave a path for my children and future generations, empowering them to achieve success and break down the 
+          barriers that have long burdened our communities.  </p>
+       </div>
+
+       <div class="p-4">
+         <h4 class="fst-italic">Past & Current Work</h4>
+         <ol class="list-unstyled mb-0">
+           <li><a href="https://keyatekkie7292.myportfolio.com/joomla">15+ Joomla Sites</a></li>
+           <li><a href="https://flatheadbiosolutions.com/">WordPress</a></li>
+           <li><a href="https://unaha.org/">WordPress</a></li>
+           <li><a href="https://waterpeopletours.com/">WordPress</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/maintenance">.NET Web Application</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/net">.NET Web Application</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/shoreline">.NET Web Application</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/cskt-jomcom">.NET Web Application</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/microsoft-flows">Microsoft Power Automate</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/microsoft-forms">Microsoft Forms</a></li>
+           <li><a href="https://keyatekkie7292.myportfolio.com/apps">App Development</a></li>
+           <li><a href="https://www.charkoosta.com/news/water-people-tours-shares-rich-history-of-the-kootenai-people-and-land-one-tour-at/article_71f04cfe-d477-11eb-9d29-9f437c8e660c.html">Water People Tours</a></li>
+         </ol>
+       </div>
+
+       <div class="p-4">
+         <h4 class="fst-italic">Contact Me</h4>
+         <ol class="list-unstyled">
+           <li><a href="https://github.com/keya-bird/">GitHub</a></li>
+           <li><a href="mailto:keyatekkie@gmail.com">Gmail</a></li>
+           <li><a href="https://ms-my.facebook.com/kbirdsbill/">Facebook</a></li>
+           <li><a href="https://www.linkedin.com/in/keya-camel-76451293">LinkedIn</a></li>
+         </ol>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</main>
+
+<footer class="blog-footer">
+ <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+ <p>
+   <a href="#">Back to top</a>
+ </p>
+</footer>
+
+</body>
+</html>
