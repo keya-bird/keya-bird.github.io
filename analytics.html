@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+</head>
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+  </script>
+
+<body>
+  <div w3-include-html="navbar.html"></div> 
+
+    <script>
+    includeHTML();
+    </script>
+<p>
+</p>
+
+   <!-- Custom styles for this template -->
+   <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="blog.css" rel="stylesheet">
+ </head>
+ <body>
+ 
+<main class="container">
+ <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+   <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic">Data Science & Analytics</h1>
+     <p class="lead my-3">Welcome to my Data portfolio. My portfolio is using using custom PowerBI Reports with live data.</p>
+     <p class="lead mb-0"><a href="#welcome" class="text-white fw-bold">Continue reading...</a></p>
+   </div>
+ </div>
+
+
+
+ <div class="row g-5">
+   <div class="col-md-8">
+     <h3 class="pb-4 mb-4 fst-italic border-bottom">
+      Data science is a transformative field that leverages the power of data to uncover insights, inform decisions, and drive innovation. Here’s a brief overview of its importance:
+     </h3>
+     <div id="welcome">
+     <article class="blog-post">
+       <h2 class="blog-post-title">Introduction To Data</h2>
+       <p class="blog-post-meta">April 13th, 2024 by <a href="#">Keya B. Camel</a></p>
+       <p><strong>Insightful Decision-Making:</strong> Data science enables businesses to sift through vast amounts of data to discover patterns and trends. This leads to more informed decisions, helping companies to strategize effectively and gain a competitive edge.</p>
+       <p><strong>Innovation and Improvement:</strong> Data science drives innovation by identifying new opportunities and improving existing processes. It’s instrumental in developing new products, services, and technologies that can transform industries.</p>
+       <p><strong>Career Opportunities:</strong> As data becomes increasingly integral to business operations, the demand for data scientists has soared. These professionals are essential for interpreting complex data and providing actionable insights.  Data Analytics
+        Predictive data analytics are some of the most commonly used category of data analytics.
+        Data collection and analyses involves gathering data for business decision-making, strategic planning and research.</p>
+       <p><strong>Cross-Industry Applications: </strong>From healthcare to finance, data science is vital across various sectors. It helps in making smarter decisions, predicting trends, and understanding customer behavior, which is crucial for success in today’s data-driven world.</p>
+       <p><strong>Cost Efficiency:</strong> At its core, data science serves as the pivotal element in contemporary industry, equipping organizations with the necessary tools and methodologies to transform raw data into insightful and actionable knowledge.</p> The practice of data science and data collection is fundamental in amassing information that underpins transparent and accountable business decision-making, strategic planning, and research, fostering continuous improvement across various domains.</p>
+     </div>
+       <hr>
+       <h2>Microsoft PowerBI Analytics</h2>
+       <p>Power BI is a collection of software services, apps, and connectors from Microsoft that work together to transform unrelated data sources into coherent, visually immersive, and interactive insights. It allows users to connect to their data sources, visualize what’s important, and share that with anyone they choose.  Please see some of my Power BI data collection sample reports:</p>
+       <blockquote class="blockquote">
+         <p>Helpdesk Tickets</p>
+         <iframe title="Zoom, excel, word, outlook, email, teams, zoom and access" width="800" height="573.5" src="https://app.powerbi.com/view?r=eyJrIjoiZTY1YmM5OGEtMGMxZS00MzZiLTgzZTktMWYzYWMwMzc3MDkzIiwidCI6IjA1Mzk1N2NhLWE5ZjQtNGFjZC04MDgxLTViZmVmZjUyMDA0YyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+        </blockquote>
+       <blockquote class="blockquote">
+        <p>Web Tickets Summary</p>
+        <iframe title="Web Ticket Summary 2024" width="800" height="573.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjJiNmQ2YTUtZTcwYS00Yjc4LWFmOTItOGJlM2E0OWNlNjc1IiwidCI6IjA1Mzk1N2NhLWE5ZjQtNGFjZC04MDgxLTViZmVmZjUyMDA0YyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p>Web Ticket All Data</p>
+        <iframe title="alltickets" width="800" height="573.5" src="https://app.powerbi.com/view?r=eyJrIjoiM2ZhNTU4Y2EtNTE2Zi00OGYxLTgyMzAtZGUxYzA5MzU2NDRkIiwidCI6IjA1Mzk1N2NhLWE5ZjQtNGFjZC04MDgxLTViZmVmZjUyMDA0YyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+      </blockquote>
+      <blockquote class="blockquote">
+        <p>Csktribes.org Files Statistics</p>
+        <iframe title="CSKT Web Files Summary" width="800" height="573.5" src="https://app.powerbi.com/view?r=eyJrIjoiZTY3ZDRiZDgtNzBmZS00ZTg3LWI2MzktNzcxNTZhOWJjZmE0IiwidCI6IjA1Mzk1N2NhLWE5ZjQtNGFjZC04MDgxLTViZmVmZjUyMDA0YyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+      </blockquote>
+      
+       <p></p>
+       <h3>Professional Portfolio & Experience</h3>
+       <p>Included in my canva portfolio are these items listed below, additionally you may click on each button to review more:</p>
+       <ul>
+         <li>Connect Page.</li>
+         <li>Qualifications.</li>
+         <li>Management Experience.</li>
+         <li>Skills and Experience.</li>
+         <li>Resume.</li>
+       </ul>
+       <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF_l85iSR4&#x2F;4-cEDbXsEqBaXj3UMTErtQ&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>  
+      </article>
+
+     <article class="blog-post">
+       <h2 class="blog-post-title">A personal note</h2>
+       <p class="blog-post-meta">April, 2024 by <a href="#">Keya Birdsbill</a></p>
+
+       <p>I lead a dynamic and rewarding life, expertly juggling the responsibilities of family, work, and a fervent interest in technology. My commitment to my family is steadfast as I nurture our four children and look after our cherished pets. This portfolio is a testament to my varied abilities and versatility across different stages of my career. I have excelled in positions such as Network Operations Analyst and Web Analyst. My proficiency is in a state of continuous growth and diversification. In addition to my primary occupation, I oversee two flourishing ventures - KeyaTech and Water People Tours. My spouse and I are united by a remarkable work ethic and entrepreneurial mindset, virtues we endeavor to pass on to our offspring. I am a firm believer in the idea that life is an endless educational journey, and it’s crucial to remain an ambitious and zealous learner. It’s important to perpetually seek self-improvement and seize new prospects. The Professional Certificate in Coding: For Women at MIT Emeritus has been an invaluable platform for honing my technical skills and broadening my knowledge base, an opportunity for which I am deeply appreciative</p>
+       
+     </div>
+
+   <div class="col-md-4">
+     <div class="position-sticky" style="top: 2rem;">
+       <div class="p-4 mb-3 bg-light rounded">
+        <img src="keyaandgirls.jpg" class="img-fluid float-end" style="width:200px" style="height: 250px">
+         <h4 class="fst-italic">About</h4>
+         <p class="mb-0">As an Indigenous Native American woman and the proud wife and mother of four incredible children, 
+          I am deeply driven to overcome poverty and prejudice through the pursuit of higher education in technology. My passion for web technologies 
+          and technology as a whole fuels my determination to pave a path for my children and future generations, empowering them to achieve success and break down the 
+          barriers that have long burdened our communities.  </p>
+       </div>
+       <div class="p-4">
+        <h4 class="fst-italic">Relevant Experience</h4>
+        <ul>
+          <li>2024 CSKT NOC Analyst/CSKT IT Department</li> 
+          <li>2024 Business Owner 5 star Hospitality Managment & Customer Service</li> 
+          <li>2023 CSKT Web Analyst/CSKT IT Department</li>
+          <li>2017 CSKT Legal/Information Systems Analyst</li>
+          <li>2016 CSKT Legal/Lead Scanner with IQBG</li>
+         </ul>
+      </div>
+       <div class="p-4">
+         <h4 class="fst-italic">Education</h4>
+         <ul>
+           <li>MIT PROFESSIONAL CERTIFICATE IN CODING</li> 
+           <li>WordPress Dev: Unlocking Power with Code</li>
+           <li>Bachelors of Science IT</li>
+           <li>Computer Science AS</li>
+           <li>USER INTERFACE DESIGN - UI/UX DESIGN</li> 
+           <li>CERTIFIED GIS IMAGE PROCESSOR</li>
+           <li>COMPTIA A+ CERTIFICATION</li>
+           <li>.NET MICROSOFT BOOTCAMP TRAINING</li>
+
+          </ul>
+       </div>
+
+       <div class="p-4">
+         <h4 class="fst-italic">Contact Me</h4>
+         <ol class="list-unstyled">
+           <li><a href="https://github.com/keya-bird/">GitHub</a></li>
+           <li><a href="mailto:keyatekkie@gmail.com">Gmail</a></li>
+           <li><a href="https://ms-my.facebook.com/kbirdsbill/">Facebook</a></li>
+           <li><a href="https://www.linkedin.com/in/keya-camel-76451293">LinkedIn</a></li>
+         </ol>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</main>
+
+<footer class="blog-footer">
+ <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+ <p>
+   <a href="#">Back to top</a>
+ </p>
+</footer>
+
+</body>
+</html>
